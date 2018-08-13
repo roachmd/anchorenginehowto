@@ -1,0 +1,11 @@
+# URL of Anchore Engine
+engine_uri: 'http://anchore-engine:8228/v1'
+
+# URL
+redis_url: 'redis://anchore-redis:6379'
+
+# Specifies if SSL is enabled in the web app container
+enable_ssl: False
+
+# Specifies whether to trust a reverse proxy
+enable_proxy: False
