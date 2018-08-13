@@ -1,6 +1,16 @@
 ### Anchore Engine How To Guide
 ---
+Purpose:
+Learning to add a docker container security scanner to a container {{ jenkins }} pipeline.
 
+
+###### Using Docker Compose:
+
+```
+docker-compose up -d
+-- install the cli below
+anchore-cli --u admin --p foobar --url http://localhost:8228/v1 system status
+```
 
 ###### CLI How to
 ---
