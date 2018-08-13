@@ -1,10 +1,10 @@
 ### Anchore Engine How To Guide
 ---
 Purpose:
-<p> I started in the early days of docker. Back then saying we are using docker now was enough to convince the security team. So my  build went fast and clean. But today not so much.
+<p> I started in the early days of docker. Back then saying we are using docker now was enough to get you past the securtiy team. But today not so much.
 <p> Security teams have caught up and now so have the tools. Mature mature pipelines now include some sort of security scan.
 <p> Looking around for a free scanner with an enterprise upgrade option is few and far between. I've seen aquasecurity but wanted to learn to use another.
-<p> So below is my dive into using Anchore Engine. Learning to add a docker container security scanner to a container {{ jenkins }} pipeline.
+<p> So below is my dive into using Anchore Engine.
 
 
 ###### Using Docker Compose:
@@ -15,7 +15,7 @@ docker-compose up -d
 
 <p> Go ahead and install the client below. Then run
 
-```
+```yaml
 anchore-cli --u admin --p foobar --url http://localhost:8228/v1 system status
 ```
 ----
