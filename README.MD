@@ -9,6 +9,8 @@ Purpose:
 
 ###### Using Docker Compose:
 
+<p> Using the docs with a few corrections, changes, etc...
+
 ```yaml
 docker-compose up -d
 ```
@@ -41,8 +43,17 @@ Using CLI:
 ```yaml
 anchore-cli --u admin --p foobar image add docker.io/library/node:latest
 anchore-cli --u admin --p foobar image list
-anchore-cli --u admin --p foobar image vuln docker.io/library/node:latest all
+anchore-cli --u admin --p foobar image vuln docker.io/library/node:latest os | wc -l
+> 1669
+anchore-cli --u admin --p foobar image vuln docker.io/library/node:latest os | head
+> Vulnerability ID        Package                                                Severity          Fix                    Vulnerability URL
+> CVE-2015-1258           libvpx1-1.3.0-3+deb8u1                                 High              None                   https://security-tracker.debian.org/tracker/CVE-2015-1258
+> CVE-2017-1000379        linux-libc-dev-3.16.57-2                               High              None                   https://security-tracker.debian.org/tracker/CVE-2017-1000379
+> CVE-2017-10662          linux-libc-dev-3.16.57-2                               High              None                   https://security-tracker.debian.org/tracker/CVE-2017-10662
+> CVE-2017-10663          linux-libc-dev-3.16.57-2                               High              None                   https://security-tracker.debian.org/tracker/CVE-2017-10663
 ```
+<p> Images
+
 ###### File Structure
 ```
 ├── aevolume
