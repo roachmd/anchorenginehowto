@@ -44,7 +44,7 @@ Using CLI:
 anchore-cli --u admin --p foobar image add docker.io/library/node:latest
 anchore-cli --u admin --p foobar image list
 anchore-cli --u admin --p foobar image vuln docker.io/library/node:latest os | wc -l
-> 1669
+> 1669 {{ Like WTF, no really WTF NODE. }}
 anchore-cli --u admin --p foobar image vuln docker.io/library/node:latest os | head
 > Vulnerability ID        Package                                                Severity          Fix                    Vulnerability URL
 > CVE-2015-1258           libvpx1-1.3.0-3+deb8u1                                 High              None                   https://security-tracker.debian.org/tracker/CVE-2015-1258
