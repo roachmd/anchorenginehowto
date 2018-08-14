@@ -22,7 +22,7 @@ anchore-cli --u admin --p foobar --url http://localhost:8228/v1 system status
 <p> At the time of this writing 8/13/2018. You should see something like this:
 <p> ![alt text][logo]
 
-[logo]: ./image/enginestatus.png "Anchor Engine"
+[logo]: https://github.com/roachmd/anchorenginehowto/raw/master/image/enginestatus.png "Anchor Engine"
 
 ----
 ###### CLI How to
