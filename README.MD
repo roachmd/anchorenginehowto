@@ -2,7 +2,7 @@
 ---
 Purpose:
 <p> I started in the early days of docker. Back then saying we are using docker now was enough to get you past the securtiy team. But today not so much.
-<p> Security teams have caught up and now so have the tools. Mature mature pipelines now include some sort of security scan.
+<p> Security teams have caught up and now so have the tools. Mature pipelines now include some sort of security scan.
 <p> Looking around for a free scanner with an enterprise upgrade option is few and far between. I've seen aquasecurity but wanted to learn to use another.
 <p> So below is my dive into using Anchore Engine.
 
@@ -21,7 +21,7 @@ anchore-cli --u admin --p foobar --url http://localhost:8228/v1 system status
 
 <p> At the time of this writing 8/13/2018. You should see something like this:
 
-![Anchore Engine](https://github.com/roachmd/anchorenginehowto/raw/master/image/enginestatus.png) 
+![Anchore Engine](https://github.com/roachmd/anchorenginehowto/raw/master/image/enginestatus.png)
 
 ----
 ###### CLI How to
